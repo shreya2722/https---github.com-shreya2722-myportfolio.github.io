@@ -1,0 +1,175 @@
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+
+#home {
+  text-align: center;
+}
+
+/* Image position */
+.classs {
+    width: 100%;
+    height: 100%;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+/* hover */
+.tablink:hover {
+  background-color: #777;
+}
+
+/* tab content  */
+.tabcontent {
+  color: black;
+  display: none;
+  
+}
+
+.home-text {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+/* hire me button */
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 70px 55px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: grey;
+  color: white;
+}
+
+/*about*/
+#About {
+  background-color: rgb(12, 12, 11);
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+.about-text  {
+  font-size: 25px;
+  color: white;
+  position: absolute;
+  top: 30%;
+  float: right;
+  width: 420px;
+  height: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  right: 10%;
+  text-align: center;
+}
+
+/*Skiils*/
+#Skills {
+  text-align: center;
+  background-color: peachpuff;
+  height: 100%;
+
+}
+
+.skills {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.skill-header {
+  margin-bottom: 1rem;
+}
+
+.skills-wrapper img {
+  padding: 1.25rem;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+
+.contact {
+  margin-top: 5rem;
+}
+
+/*contact*/
+#Contact {
+  text-align: center;
+  background-color: rgb(241, 222, 222);
+  width: 100%;
+  height: 100%;
+
+}
+h4 {
+
+  font-size: 45px;
+  top: 45%;
+  bottom: 45%;
+
+}
+/*form*/
+.form {
+  float: center;
+  align-items: center;
+  width: 420px;
+  height: 350px;
+  padding: 10px;
+  border: 5px solid black;
+  left: 35%;
+  position: fixed;
+ 
+
+}
+
+/*social*/
+.socials {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  
+}
+
+.socicon {
+  width: 2rem;
+  height: 2rem
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}

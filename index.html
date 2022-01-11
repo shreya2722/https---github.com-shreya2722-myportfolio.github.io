@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+  <button class="tablink" onclick="openPage('Home', this, 'black')" id="defaultOpen">Home</button>
+  <button class="tablink" onclick="openPage('About', this, 'black')">About</button>
+  <button class="tablink" onclick="openPage('Skills', this, 'black')">Skills</button>
+  <button class="tablink" onclick="openPage('Contact', this, 'black')">Contact</button>
+
+
+  <!--home-->
+
+  <div id="Home" class="tabcontent">
+    <img src=homeimg.jpg alt="webdeveloper" class="classs">
+      <div class="home-text">
+        <h1 style="font-size:80px">V.Shreya</h1>
+        <marquee behavior="once" direction="left" width="90%" scrollamount="12">
+        <p style="font-size: 50px">I'm a Frontend Developer</p>
+        </marquee>
+        <button type="button" width="350px;" value="Download PDF File" onclick="window.open('myresume.pdf')"> HIRE ME </button>
+      </div>
+    </div>
+  </div>
+  
+  <!--about-->
+  <div id="About" class="tabcontent">
+    <img src="image.png" alt="webdeveloper1" class="aimg" left="85%" ALIGN="left" width="720" height="625"/>
+    <div class="about-text">
+      <h2><b><u>Career Objective</u></b></h2>
+      <p>I am a student at SRM University looking to land an internship in the computer science field. 
+            <br>Seeking a challenging career to put my skills to use.
+        <br>I'm highly analytical, diligent, and a team player.
+      </div>
+  </div>
+  
+
+  <!--skills-->
+  <div id="Skills" class="tabcontent">
+    <h3 class="skill-header">My Top Skills</h3>
+    <section class="skills" id="skills">
+      <div class="skills-wrapper">
+       
+          <img
+            src="html.jpg"
+            alt="html"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="css.png"
+            alt="css"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="python.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+
+        
+          <img
+            src="c.png"
+            alt="c"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="ui.png"
+            alt="ui"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="close.jpg"
+            alt="close"
+            loading="lazy"
+            class="icon icon-card"
+          />
+        
+      </div>
+    </section>
+        
+  </div>
+      
+  
+  <!--Contact-->
+  <div id="Contact" class="tabcontent">
+    <h4>Contact</h4>
+    <div class="form">
+    <form>
+      Name <input type="text" name="email" value="Name"/> </br> 
+    </br>E-mail <input type="email" name="email" value="E-mail"/></br>
+  
+  </br>Gender<input type="radio" name="gender" value="Male"/> Male
+     <input type="radio" name="gender" value="Female"/> Female <br/>
+
+   </br> Suggestions</br><textarea name="suggestion" rows="10" cols="40">
+       write your text.....
+     </textarea> <br/>
+
+    </br><input type="submit" name="submi" value="submit"/>
+     <br/>
+   </form>
+   </div>
+  <!---social icon-->
+  <div class="socials">
+    <a href="mailto: shreyareddy5157@.gmailcom" class="fa fa-google" style="font-size:48px"></a>
+    <a href="https://www.linkedin.com/in/shreya-reddy-113236207/" class="fa fa-linkedin" style="font-size:48px"></a>
+    <a href="https://github.com/shreya2722"class="fa fa-github" style="font-size:48px"></a>
+</div>
+
+
+  
+  <script>
+  function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+  }
+  
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+     
+  </body>
+  </html> 
+  
